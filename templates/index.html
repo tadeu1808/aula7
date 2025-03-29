@@ -1,14 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <title> Minha Página HTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página HTML</title>
+    <style>
+        h1 {
+            color: red;
+        }
+        button {
+            background-color: green;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: darkgreen;
+        }
+    </style>
 </head>
 <body>
-    <h1 style="color: red;"> Marea Zero KM</h1>
-        <button style="background-color: green;">Acessar</button/h1>
-        <img src="{{ url_for('static', filename='marea_bomba.jpg') }}"/>
+    <h1>Marea Zero KM</h1>
+    <button onclick="alert('Acessando!')">Acessar</button>
+    <img src="{{ url_for('static', filename='marea_bomba.jpg') }}" alt="Imagem do Marea">
 </body>
 </html>
+
 
 
 

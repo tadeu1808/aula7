@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Pagina Inicial</title>
+</head>
+<body>
+    <h1 style="color: red;"> LISTA DE PRODUTOS</h1>
+    <a href="/criar">Novo produto:</a>        
+
+    <ul>
+        {% for produto in produtos %}
+            <li>
+                {{ produto['nome']}} - {{ produto['preco']}}
+            </li>
+        {% endfor %}    
+        </ul>        
+</body>
+</html>
+
